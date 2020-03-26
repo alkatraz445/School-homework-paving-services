@@ -234,6 +234,10 @@ a {
   flex-direction: column;
 }
 
+.opinions > p {
+  margin: 0 15% 0 15%;
+}
+
 .op1 {
   border-left: solid 3px deeppink;
 }

@@ -50,6 +50,7 @@ h3,
 h4,
 h5 {
   margin: 0;
+  display: inline-block;
 }
 
 a {
@@ -83,8 +84,9 @@ a {
   position: relative;
   width: 40rem;
   height: 25rem;
-  border-radius: 5px;
-  box-shadow: 0px 5px 10px 0px #a0a0a0;
+  border-radius: 15px;
+  background: #dddddd;
+  box-shadow: 14px 14px 38px #a1a1a1, -14px -14px 38px #ffffff;
 }
 
 .section {
@@ -93,9 +95,14 @@ a {
 }
 
 .skew {
+  top: 30px;
   position: relative;
   padding: 20px;
   transform: skewY(-5deg);
+}
+
+#header > .skew {
+  background-color: var(--fontColor);
 }
 
 #preloader > .skew {
@@ -119,7 +126,7 @@ a {
   height: 100vh;
   width: 100%;
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(#00000088, #00000088),
     url("../photos/daniel-vargas-ngrIs67UJEg-unsplash.jpg");
   background-size: cover;
 }
@@ -209,7 +216,55 @@ a {
 
 #opinions {
   background-color: var(--mainColor);
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+
+#opinions > h2 {
+  width: 100%;
+}
+
+.opinions {
+  width: 20%;
+  height: 50%;
+  border-radius: 15px;
+  background: #dddddd;
+  box-shadow: 21px 21px 42px #a1a1a1, -21px -21px 42px #ececec;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.op1 {
+  border-left: solid 3px deeppink;
+}
+
+.op2 {
+  border-bottom: solid 3px deepskyblue;
+}
+
+.op3 {
+  border-right: solid 3px goldenrod;
+}
+
+.portrait {
+  border-radius: 150px;
+  height: 150px;
+  width: 150px;
+  background-position: center;
+  background-size: cover;
+}
+.port1 {
+  background-image: url(../photos/hls-44-5edl5l4NbL0-unsplash.jpg);
+}
+
+.port2 {
+  background-image: url(../photos/stefan-stefancik-TYz7o-vqxF0-unsplash.jpg);
+}
+
+.port3 {
+  background-image: url(../photos/guillaume-bleyer-p6BwpeOSd9w-unsplash.jpg);
+}
+
 .footer {
   height: 40vh;
   width: 100%;
@@ -230,7 +285,7 @@ a {
 }
 
 .loading:after {
-  content: " .";
+  content: ".";
   animation: dots 0.5s steps(5, end) infinite;
 }
 

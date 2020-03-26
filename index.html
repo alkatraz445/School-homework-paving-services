@@ -7,7 +7,11 @@
     <title>Mirek-brux usługi brukarskie</title>
   </head>
   <body class="flex flex-center">
-    <div id="preloader"></div>
+    <div id="preloader" class="flex flex-center">
+      <div class="skew">
+        <h1>Ładowanie...</h1>
+      </div>
+    </div>
     <div class="main-background">
       <header id="header" class="header flex flex-center">
         <a href="#gallery">
@@ -28,11 +32,13 @@
         </a>
       </header>
       <section id="landing-page" class="section flex flex-center">
-        <h2>
-          Robimy brudną robotę po to, <br />
-          abyś ty mógł się cieszyć <br />
-          pięknym widokiem.
-        </h2>
+        <div class="skew">
+          <h2>
+            Robimy brudną robotę po to, <br />
+            abyś ty mógł się cieszyć <br />
+            pięknym widokiem.
+          </h2>
+        </div>
       </section>
     </div>
     <section id="gallery" class="section flex flex-center">
@@ -79,15 +85,11 @@
         Made <br />
         by J. Kraus <br />
         with <br />
-        <i class="fas fa-heart"></i>
+        &hearts;
       </h3>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/e73b8f098d.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>

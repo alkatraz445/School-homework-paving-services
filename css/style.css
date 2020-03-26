@@ -92,6 +92,27 @@ a {
   height: 100vh;
 }
 
+.skew {
+  position: relative;
+  padding: 20px;
+  transform: skewY(-5deg);
+}
+
+#preloader > .skew {
+  background-color: var(--secondaryColor);
+}
+#landing-page > .skew {
+  background-color: #00000094;
+}
+
+.skew > h1 {
+  transform: skewY(5deg);
+}
+
+.skew > h2 {
+  transform: skewY(5deg);
+}
+
 /* Main style */
 
 .main-background {

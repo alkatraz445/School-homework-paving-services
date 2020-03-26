@@ -6,7 +6,6 @@ window.onload = function() {
 const loader = () => {
   let preloader = document.getElementById("preloader");
   preloader.style.opacity = "0";
-  preloader.parentNode.removeChild(preloader);
 };
 
 const parallaxImages = () => {

@@ -1,6 +1,6 @@
 window.onload = function() {
   parallaxImages();
-  loader();
+  window.setTimeout(loader, 1000);
 };
 
 const loader = () => {

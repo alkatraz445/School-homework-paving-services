@@ -181,6 +181,10 @@ a {
   box-shadow: 21px 21px 42px #bdbdbd, -21px -21px 42px #ffffff;
 }
 
+.offers > p {
+  margin: 0 20% 0 20%;
+}
+
 .offers > a {
   transform: translateY(25px);
   transition: all 0.2s;

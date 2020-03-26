@@ -1,11 +1,15 @@
 window.onload = function() {
   parallaxImages();
   window.setTimeout(loader, 1000);
+  window.setTimeout(preloaderKiller, 2000);
 };
 
 const loader = () => {
-  let preloader = document.getElementById("preloader");
+  var preloader = document.getElementById("preloader");
   preloader.style.opacity = "0";
+};
+const preloaderKiller = () => {
+  preloader.parentNode.removeChild(preloader);
 };
 
 const parallaxImages = () => {

@@ -269,6 +269,8 @@ a {
   height: 40vh;
   width: 100%;
   background-color: var(--secondaryColor);
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /* Loader */

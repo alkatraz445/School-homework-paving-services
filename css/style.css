@@ -43,10 +43,12 @@ body {
 
 h2 {
   z-index: 10;
-  margin: 0;
 }
-
-h3 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
 }
 
@@ -191,5 +193,16 @@ a {
   height: 40vh;
   width: 100%;
   background-color: var(--secondaryColor);
-  font-family: "Pacifico", cursive;
+}
+
+/* Loader */
+#preloader {
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--mainColor);
+  z-index: 99999;
 }

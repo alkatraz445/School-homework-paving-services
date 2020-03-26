@@ -1,8 +1,13 @@
 window.onload = function() {
   parallaxImages();
+  loader();
 };
 
-let rellax = new Rellax(".rellax");
+const loader = () => {
+  let preloader = document.getElementById("preloader");
+  preloader.style.opacity = "0";
+  preloader.parentNode.removeChild(preloader);
+};
 
 const parallaxImages = () => {
   let image1 = document.getElementsByClassName("image1");

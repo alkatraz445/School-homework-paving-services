@@ -1,8 +1,10 @@
 window.onload = function() {
-  parallaxScript();
+  parallaxImages();
 };
 
-const parallaxScript = () => {
+let rellax = new Rellax(".rellax");
+
+const parallaxImages = () => {
   let image1 = document.getElementsByClassName("image1");
   new simpleParallax(image1, {
     orientation: "right",

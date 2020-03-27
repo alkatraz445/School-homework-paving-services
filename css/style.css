@@ -258,21 +258,7 @@ a {
   border-radius: 150px;
   height: 150px;
   width: 150px;
-  background-position: center;
-  background-size: cover;
   object-fit: cover;
-}
-
-.port1 {
-  background-image: url(../photos/hls-44-5edl5l4NbL0-unsplash.jpg);
-}
-
-.port2 {
-  background-image: url(../photos/stefan-stefancik-TYz7o-vqxF0-unsplash.jpg);
-}
-
-.port3 {
-  background-image: url(../photos/guillaume-bleyer-p6BwpeOSd9w-unsplash.jpg);
 }
 
 .footer {

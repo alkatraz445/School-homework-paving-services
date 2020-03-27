@@ -260,7 +260,9 @@ a {
   width: 150px;
   background-position: center;
   background-size: cover;
+  object-fit: cover;
 }
+
 .port1 {
   background-image: url(../photos/hls-44-5edl5l4NbL0-unsplash.jpg);
 }
@@ -292,11 +294,17 @@ a {
   background-color: var(--mainColor);
   z-index: 99999;
   transition: all 1s;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#preloader > noscript {
+  margin-top: 20%;
 }
 
 .loading:after {
   content: ".";
-  animation: dots 0.5s steps(5, end) infinite;
+  animation: dots 1s steps(5, end) infinite;
 }
 
 @keyframes dots {

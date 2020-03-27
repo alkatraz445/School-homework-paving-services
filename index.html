@@ -11,6 +11,7 @@
       <div class="skew">
         <h1 class="loading">Ładowanie</h1>
       </div>
+      <noscript>Ta strona nie działa bez JavaScript.</noscript>
     </div>
     <div class="main-background">
       <header id="header" class="header flex flex-center">
@@ -43,21 +44,30 @@
     </div>
     <section id="gallery" class="section flex flex-center">
       <h2>Galeria</h2>
-      <img
-        class="thumbnail image1"
-        src="photos/9075_wp_20151006_17_15_29_pro.jpg"
-        alt="photo"
-      />
-      <img
-        class="thumbnail image2"
-        src="photos/bruk-prosty-i-1-copy_267.jpg"
-        alt="photo"
-      />
-      <img
-        class="thumbnail image3"
-        src="photos/us._brukowanie_(5).jpg"
-        alt="photo"
-      />
+      <picture>
+        <source srcset="photos/webp/9075_wp_20151006_17_15_29_pro.webp" />
+        <img
+          class="thumbnail image1"
+          src="photos/9075_wp_20151006_17_15_29_pro.jpg"
+          alt="photo"
+        />
+      </picture>
+      <picture>
+        <source srcset="photos/webp/bruk-prosty-i-1-copy_267.webp" />
+        <img
+          class="thumbnail image2"
+          src="/photos/bruk-prosty-i-1-copy_267.jpg"
+          alt="photo"
+        />
+      </picture>
+      <picture>
+        <source srcset="photos/webp/us._brukowanie_(5).webp" />
+        <img
+          class="thumbnail image3"
+          src="/photos/us._brukowanie_(5).jpg"
+          alt="photo"
+        />
+      </picture>
     </section>
     <section id="offer" class="section flex flex-center">
       <h2>Oferta</h2>
@@ -80,7 +90,14 @@
     <section id="opinions" class="section flex flex-center">
       <h2>Opinie</h2>
       <div class="opinions op1 flex flex-center">
-        <div class="portrait port1"></div>
+        <picture
+          ><source srcset="./photos/hls-44-5edl5l4NbL0-unsplash.jpg"/>
+          <img
+            class="portrait"
+            src="./photos/hls-44-5edl5l4NbL0-unsplash.jpg"
+            alt="portrait"
+        /></picture>
+
         <h4>Jerzy Papir</h4>
         <p>
           "Fachowcy. To jedyne słowo jakie przychodzi mi na myśl patrząc na ich
@@ -88,7 +105,16 @@
         </p>
       </div>
       <div class="opinions op2 flex flex-center">
-        <div class="portrait port2"></div>
+        <picture>
+          <source
+            srcset="./photos/webp/stefan-stefancik-TYz7o-vqxF0-unsplash.webp"
+          />
+          <img
+            class="portrait"
+            src="./photos/stefan-stefancik-TYz7o-vqxF0-unsplash.jpg"
+            alt="portrait"
+          />
+        </picture>
         <h4>Franek Hundert</h4>
         <p>
           "Urzekł mnie ich sposób układania bruku. Pokazali męstwo i pokorę
@@ -96,7 +122,16 @@
         </p>
       </div>
       <div class="opinions op3 flex flex-center">
-        <div class="portrait port3"></div>
+        <picture>
+          <source
+            srcset="./photos/webp/guillaume-bleyer-p6BwpeOSd9w-unsplash.webp"
+          />
+          <img
+            class="portrait"
+            src="./photos/guillaume-bleyer-p6BwpeOSd9w-unsplash.jpg"
+            alt="portrait"
+          />
+        </picture>
         <h4>Samanta Hyde</h4>
         <p>
           "Przez całe życie żyłam w bloku i nie wiedziałam ile szczęścia w życiu

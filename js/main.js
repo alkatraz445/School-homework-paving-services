@@ -1,6 +1,5 @@
 window.onload = function() {
   parallaxImages();
-  // window.setTimeout(loader, 1000);
   loader();
   window.setTimeout(preloaderKiller, 1000);
 };

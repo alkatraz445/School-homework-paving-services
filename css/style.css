@@ -278,7 +278,7 @@ a {
   right: 0;
   bottom: 0;
   background-color: var(--mainColor);
-  z-index: 99999;
+  z-index: 100;
   transition: all 1s;
   flex-wrap: wrap;
   flex-direction: column;

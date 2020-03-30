@@ -1,7 +1,8 @@
 window.onload = function() {
   parallaxImages();
-  window.setTimeout(loader, 1000);
-  window.setTimeout(preloaderKiller, 2000);
+  // window.setTimeout(loader, 1000);
+  loader();
+  window.setTimeout(preloaderKiller, 1000);
 };
 
 const loader = () => {

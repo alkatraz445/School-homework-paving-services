@@ -2,6 +2,13 @@ window.onload = function() {
   parallaxImages();
   loader();
   window.setTimeout(preloaderKiller, 1000);
+  scrollToTop();
+};
+
+const scrollToTop = () => {
+  window.onbeforeunload = function() {
+    window.scrollTo(0, 0);
+  };
 };
 
 const loader = () => {

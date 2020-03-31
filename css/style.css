@@ -95,15 +95,19 @@ a {
 }
 
 .skew {
-  top: 30px;
   position: relative;
-  /* padding: 20px; */
+  padding: 20px;
   transform: skewY(-5deg);
 }
 
+.logo {
+  top: 5vh;
+  padding: 0px;
+}
+
 .skew img {
-  height: 70%;
-  width: 70%;
+  height: 80%;
+  width: 80%;
   transform: skewY(5deg);
 }
 

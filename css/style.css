@@ -97,8 +97,14 @@ a {
 .skew {
   top: 30px;
   position: relative;
-  padding: 20px;
+  /* padding: 20px; */
   transform: skewY(-5deg);
+}
+
+.skew img {
+  height: 70%;
+  width: 70%;
+  transform: skewY(5deg);
 }
 
 #header > .skew {
